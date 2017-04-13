@@ -3,3 +3,6 @@
 - 采用MVC模式开发
 - 用原生的JS实现发送博客、评论文章的功能
 - 用Node.js和Express搭建博客后端程序
+
+![png](screenshot/01.png)
+![png](screenshot/02.png)
