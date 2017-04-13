@@ -1,0 +1,282 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background: #F7F8FA;
+}
+.main-container {
+    width: 900px;
+    margin: 0px auto;
+    background: #F7F8FA;
+}
+
+/*头部*/
+.model-head {
+    position: relative;
+    height: 240px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-image: url("../images/background2.jpg");
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 5px;
+    border: 1px solid #F0F2F7;
+    box-shadow: 0px 0px 1px #dedede;
+}
+.head-photo {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 160px;
+}
+.head-photo img {
+    float: left;
+    width: 100%;
+}
+.head-about {
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 200px;
+}
+.about-name {
+    margin: 0px;
+}
+
+/*侧栏*/
+.model-aside {
+    float: left;
+    width: 180px;
+    margin: 20px 0px;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #F0F2F7;
+    box-shadow: 0px 0px 1px #dedede;
+    box-sizing: border-box;
+}
+.aside-list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.aside-item {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.aside-item:hover {
+    color: #F89516;
+}
+.secondery-list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.aside-item:hover .secondery-list {
+    height: 24px;
+}
+.secondery-list li {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.secondery-list a {
+    color: #b9b9b9;
+    text-decoration: none;
+}
+.secondery-list a:hover {
+    color: #F89516;
+}
+.aside-item + .aside-item {
+    padding-top: 10px;
+}
+
+/*博客*/
+.model-blogs {
+    width: 700px;
+    margin-left: 200px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #F0F2F7;
+    box-shadow: 0px 0px 1px #dedede;
+    box-sizing: border-box;
+}
+.blog-cell {
+    padding: 20px 0px;
+    margin: 0px 30px;
+    transition: all 0.3s;
+}
+.blog-cell + .blog-cell {
+    border-top: 1px solid #dedede;
+}
+.blog-title {
+    font-size: 24px;
+    font-weight: bolder;
+}
+.blog-content {
+    position: relative;
+    min-height: 80px;
+    max-height: 150px;
+    overflow: hidden;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+.content-curtain {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(0deg, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+.blog-author {
+    font-size: 14px;
+    color: #8590A6;
+    text-align: right;
+}
+
+/*新博客输入*/
+.blog-auto-form {
+    position: relative;
+    padding: 20px;
+}
+.blog-input-box {
+    font-size: 14px;
+}
+.blog-input-box + .blog-input-box {
+    margin-top: 10px;
+}
+.blog-input-title {
+    vertical-align: top;
+}
+.blog-auto-input {
+    padding: 5px;
+    width: 280px;
+    box-sizing: border-box;
+    border: 1px solid #777777;
+    border-radius: 3px;
+    outline: none;
+}
+#id-input-content {
+    width: 280px;
+    height: 300px;
+    max-width: 280px;
+}
+#id-output-content {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    box-sizing: border-box;
+    border: 1px solid #777777;
+    border-radius: 3px;
+    width: 320px;
+    height: 410px;
+    padding: 15px;
+}
+.blog-auto-submit {
+    width: 150px;
+    margin: 15px auto 0px;
+    padding: 5px;
+    display: block;
+}
+
+/*博客文章*/
+.blog-detail-cell {
+    padding: 30px;
+}
+.blog-detail-title {
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.blog-detail-author {
+    text-align: center;
+    font-size: 14px;
+}
+.blog-detail-content {
+    margin: 30px 0px;
+}
+
+/*文章评论*/
+.blog-comments {
+    border-top: 1px solid #dedede;
+}
+.comment-write {
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 0px;
+    margin: 0px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.comment-write:hover {
+    color: #F89516;
+}
+.new-comment {
+    border-bottom: 1px solid #dedede;
+    padding: 0px;
+    height: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all 0.8s;
+}
+.new-comment-hide {
+    padding: 20px 0px;
+    height: 188px;
+}
+.new-comment label {
+    display: block;
+    margin: 0px auto;
+    padding-bottom: 20px;
+}
+.comment-title {
+    font-size: 14px;
+    vertical-align: top;
+}
+.comment-input {
+    width: 550px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #777777;
+    border-radius: 3px;
+    outline: none;
+}
+.comment-add {
+    display: block;
+    margin: 0px auto;
+    padding: 5px 40px;
+}
+.old-comment-cell {
+    border-bottom: 1px solid #dedede;
+    padding: 10px 0px;
+}
+.old-comment-author {
+    font-weight: bolder;
+    font-size: 14px;
+    margin: 0px;
+}
+.old-comment-time {
+    font-weight: normal;
+    color: #777;
+    float: right;
+    font-size: 12px;
+}
+.old-comment-content {
+    font-size: 14px;
+    margin: 14px 0px 0px;
+}
+
+
+/*通用*/
+.hide {
+    height: 0px;
+    overflow: hidden;
+}
+.vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
